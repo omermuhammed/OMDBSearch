@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">OMDB Search</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">OMDB Search</string>
+    <string name="nav_header_subtitle">OMDB Search App</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_home">OMDB Search Results</string>
+    <string name="communicate_text">Communicate</string>
+    <string name="browse_image_description">Photos</string>
+    <string name="empty_photo">No image url found</string>
+    <string name="year">Year of Release: %1$s</string>
+    <string name="type_of_media">Movie or TV Show: %1$s</string>
+    <string name="internet_connected">Internet Connected</string>
+    <string name="no_network_error">No network available, please check your WiFi or Data connection</string>
+    <string name="no_internet_error">No internet available, please check your connected WIFi or Data</string>
+    <string name="no_more_results">No more OMDB Search results</string>
+    <string name="saved_to_favorites">Successfully saved to Favorites</string>
+    <string name="removed_from_favorites">Successfully removed from Favorites</string>
+    <string name="no_more_favorites">No more favorites saved. You can do so in OMDB Search Results screen.</string>
+    <string name="splashscreen_text">OMDB Search Splash Screen</string>
+    <string name="placeholder_text">Enter keyword for OMDB Search.</string>
+    <string name="menu_search">OMDB Search</string>
+    <string name="moviedetails_screen">Movie Details</string>
+    <string name="poster_image">placeholder image</string>
+    <string name="movie_title">Title</string>
+    <string name="directed_by">Directed by: %1$s</string>
+    <string name="starring">Starring: %1$s</string>
+    <string name="rating">Rated: %1$s</string>
+    <string name="imdb_rating">IMDB Rating: %1$s</string>
+    <string name="plot">Plot: %1$s</string>
+    <string name="favorites_screen">Saved Favorites</string>
+    <string name="menu_favorites">Favorites</string>
+    <string name="favorites_placeholder_text">Saved Favorites will be displayed here</string>
+    <string name="no_favorites_in_db_message" type="id">No Favorites saved, yet. You can do so in OMDB
+        Search Results screen.
+    </string>
+    <string name="add_favorites_button">Add to Favorites</string>
+    <string name="remove_favorites_button">Remove from Favorites</string>
+</resources>

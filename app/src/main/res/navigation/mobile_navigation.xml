@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_splash">
+
+    <fragment
+        android:id="@+id/nav_splash"
+        android:name="com.omermuhammed.omdbsearch.ui.SplashscreenFragment"
+        tools:layout="@layout/fragment_splashscreen">
+        <action
+            android:id="@+id/action_splashFragment_to_homeFragment"
+            app:destination="@id/nav_home"
+            app:popUpTo="@id/nav_splash"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.omermuhammed.omdbsearch.ui.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_detailsFragment"
+            app:destination="@id/nav_moviedetails">
+            <argument
+                android:name="movieDetailsId"
+                app:argType="string"
+                android:defaultValue="OmerMuhammed" />
+        </action>
+        <argument
+            android:name="fromHomeScreen"
+            app:argType="boolean"
+            android:defaultValue="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_moviedetails"
+        android:name="com.omermuhammed.omdbsearch.ui.MovieDetailsFragment"
+        android:label="@string/moviedetails_screen"
+        tools:layout="@layout/fragment_moviedetails" >
+        <argument
+            android:name="movieDetailsId"
+            app:argType="string" />
+        <argument
+            android:name="fromHomeScreen"
+            app:argType="boolean"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_favorites"
+        android:name="com.omermuhammed.omdbsearch.ui.FavoritesFragment"
+        android:label="@string/favorites_screen"
+        tools:layout="@layout/fragment_favorites" >
+        <action
+            android:id="@+id/action_favoritesFragment_to_detailsFragment"
+            app:destination="@id/nav_moviedetails">
+            <argument
+                android:name="movieDetailsId"
+                app:argType="string"
+                android:defaultValue="DefaultFavorites" />
+            <argument
+                android:name="fromHomeScreen"
+                app:argType="boolean"
+                android:defaultValue="false" />
+        </action>
+
+    </fragment>
+
+</navigation>
